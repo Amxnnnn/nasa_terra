@@ -1,0 +1,55 @@
+/* Hide video progress bar */
+video::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+/* Video container full screen */
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video element full screen and centered */
+.video-container video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin: auto;
+  padding: 0;
+  display: block;
+  transform: none;
+}
+
+/* Volume control bar at center bottom */
+.audio-control {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Remove rotation and make full screen rectangle video in mobile view */
+@media (max-width: 768px) {
+  .video-container video {
+    max-width: 100vh;
+    max-height: 100vw;
+    object-fit: contain;
+    margin: auto;
+    padding: 0;
+    display: block;
+    transform: rotate(90deg);
+  }
+}
