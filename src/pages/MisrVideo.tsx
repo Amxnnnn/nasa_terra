@@ -14,7 +14,7 @@ const MisrVideo = () => {
     <div className="video-container bg-black">
       <video
         ref={videoRef}
-        src="/MISR.mp4"
+        src="https://cccacruvlm4elohz.public.blob.vercel-storage.com/MISR.mp4"
         autoPlay
         loop
         muted={false}

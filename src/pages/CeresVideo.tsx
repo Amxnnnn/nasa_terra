@@ -14,7 +14,7 @@ const CeresVideo = () => {
     <div className="video-container bg-black">
       <video
         ref={videoRef}
-        src="/CERES.mp4"
+        src="https://cccacruvlm4elohz.public.blob.vercel-storage.com/CERES.mp4"
         autoPlay
         loop
         muted={false}

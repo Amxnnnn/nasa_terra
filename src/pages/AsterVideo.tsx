@@ -14,7 +14,7 @@ const AsterVideo = () => {
     <div className="video-container bg-black">
       <video
         ref={videoRef}
-        src="/ASTER.mp4"
+        src="https://cccacruvlm4elohz.public.blob.vercel-storage.com/ASTER.mp4"
         autoPlay
         loop
         muted={false}

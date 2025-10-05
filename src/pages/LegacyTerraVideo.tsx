@@ -15,7 +15,7 @@ const LegacyTerraVideo = () => {
     <div className="video-container bg-black">
       <video
         ref={videoRef}
-        src="/LEGACY TERRA.mp4"
+        src="https://cccacruvlm4elohz.public.blob.vercel-storage.com/LEGACY%20TERRA.mp4"
         autoPlay
         loop
         muted={false}
